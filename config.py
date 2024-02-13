@@ -10,43 +10,43 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6547869034:AAEjHA9N7XIg5GeECVP_XTq3RJ_8VYbZicI")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6782378167:AAEM8hhAf5rLsjuAbCHNtDqPloCWckL7o_M")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "3477714"))
+APP_ID = int(os.environ.get("APP_ID", "5166878"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "1264d2d7d397c4635147ee25ab5808d1")
+API_HASH = os.environ.get("API_HASH", "fdafb41f9a67f40e34a6c67f47730a92")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001971965786"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001929180982"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1773311819"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "762308466"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://shikari:shikari@cluster0.srfww.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "shikarrixbot")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://bot8:1111@cluster0.hwtuf6x.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DATABASE_NAME", "bot88")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", -1001904815742))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001920783747"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first} . I store private files for @iBOXTV")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "").split()):
+    for x in (os.environ.get("ADMINS", "762308466 1825540060").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first} . <b> You need to be a member of iBOXTV to use me Kindly join iBOXTV First with the Button Below 👇. </b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
